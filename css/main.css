@@ -166,10 +166,5 @@
     
         div{
             display: flex;
-            text-align: left;
-        }
-    
-        table{
-            display: inline-block;
         }
     }
