@@ -12,50 +12,37 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Deca">
 </head>
 <body>
-    <div class="card">
-        <section class="info-section">
-            <h1>Get <span>insights</span> that help your business grow.</h1>
-
-            <p>
-                Discover the benefits of data analytics and make better decisions regarding revenue, 
-                customer experience, and overall efficiency.
-            </p>
-            <div>
-                <table>
-                    <tr>
-                        <th>10k+</th>
-                    </tr>
-                    <tr>
-                        <td>companies</td>      
-                    </tr>
-                </table>
+    <main>
+        <article class="card">
+            <section class="info-section">
+                <h1 class="card-heading">Get <span class="heading-span">insights</span> that help your business grow.</h1>
     
-                <table>
-                    <tr>
-                        <th>314</th>
-                    </tr>
-                    <tr>
-                        <td>templates</td>
-                    </tr>
-                </table>
-    
-                <table>
-                    <tr>
-                        <th>12M+</th>
-                    </tr>
-                    <tr>
-                        <td>queries</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
+                <p class="card-paragraph">
+                    Discover the benefits of data analytics and make better decisions regarding revenue, 
+                    customer experience, and overall efficiency.
+                </p>
 
-        <div class="picture-section">
-            <picture>
-                <source media="(min-width: 821px)" srcset="img/image-header-desktop.jpg">
-                <img src="img/image-header-mobile.jpg" alt="picture of business team">
+                <ul class="card-list">
+                    <div>
+                        <li class="stat-item">10k+</li>
+                        <li class="stat-heading-item">companies</li>
+                    </div>
+                    <div>
+                        <li class="stat-item">314</li>
+                        <li class="stat-heading-item">templates</li>
+                    </div>
+                    <div>
+                        <li class="stat-item">12M+</li>
+                        <li class="stat-heading-item">queries</li>
+                    </div>
+                </ul>
+            </section>
+    
+            <picture class="picture-section">
+                <source media="(min-width: 800px)" srcset="img/image-header-desktop.jpg">
+                <img src="img/image-header-mobile.jpg" alt="picture of business team" aria-hidden="true">
             </picture>    
-        </div>
-    </div>
+        </article>
+    </main>
 </body>
 </html>

@@ -55,116 +55,139 @@
     --font-family-two: "Lexend Deca", sans-sarif;
     --weight-700: 400;
     --weight-400: 700;
-    }
+}
     
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    
-    body{
-        background-color: var(--primary-very-dark-blue);
-        font-size: var(--font-size);
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        place-content: center;
-        align-items: center;
-    }
-    
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--primary-very-dark-blue);
+    font-size: var(--font-size);
+}
+
+body,
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: var(--primary-desaturated-blue);
+    border-radius: 0.5rem;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    color: rgba(rgba(252, 0, 0, 0.911), green, blue, alpha)
+}
+
+.info-section,
+.picture-section{
+    height: 50%;
+}
+
+.picture-section{
+    position: relative;
+}
+
+.picture-section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, var(--primary-soft-violet), var(--primary-soft-violet));
+    opacity: 0.4;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-section{
+    text-align: center;
+    padding: 2rem 1.8rem 1rem;
+}
+
+.card-heading,
+.stat-item{
+    font-family: var(--font-family-one);
+    font-weight: var(--weight-400);
+    color: var(--neutral-white);
+}
+
+.card-paragraph,
+.stat-heading-item{
+    font-family: var(--font-family-two);
+    font-weight: var(--weight-700);
+    font-size: smaller;
+}
+
+.card-heading,
+.stat-item{
+    letter-spacing: 0.1ch;
+    font-size: x-large;
+}
+
+.heading-span{
+    color: var(--primary-soft-violet);
+}
+
+.card-paragraph{
+    color: var(--neutral-white-75);
+    line-height: 1.5rem;
+    margin: 1rem 0 3rem 0;
+}
+
+.card-list{
+    list-style-type: none;
+    text-align: center;
+}
+
+.stat-heading-item{
+    color: var(--neutral-white-60);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 500px) {
     .card{
-        background-color: var(--primary-desaturated-blue);
-        border-radius: 0.5rem;
-        max-width: 80%;
-        max-height: 90%;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column-reverse;
-        color: rgba(rgba(252, 0, 0, 0.911), green, blue, alpha)
+        max-width: 60%;
+        max-height: 50%;
+        flex-direction: row;
     }
-    
-    picture{
-        position: relative;
-    }
-    
-    picture::after{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(to bottom right, var(--primary-soft-violet), var(--primary-soft-violet));
-        opacity: 0.4;
-    }
-    
-    img{
-        display: block;
-        width: 100%;
-        height: 100%;
+
+    .info-section,
+    .picture-section{
+        width: 50%;
     }
     
     .info-section{
-        text-align: center;
-        padding: 2rem 1.8rem 1rem;
-    }
-    
-    h1,
-    table th{
-        font-family: var(--font-family-one);
-        font-weight: var(--weight-400);
-        color: var(--neutral-white);
-        letter-spacing: 0.1ch;
-    }
-    
-    p,
-    table td{
-        font-family: var(--font-family-two);
-        font-weight: var(--weight-700);
-        font-size: small;
-    }
-    
-    span{
-        color: var(--primary-soft-violet);
-    }
-    
-    p{
-        color: var(--neutral-white-75);
-        line-height: 1.5rem;
-        margin: 1rem 0 3rem 0;
-    }
-    
-    table{
-        margin: 0 auto 1rem;
-    }
-    
-    table th{
-        font-size: x-large;
+        text-align: left;
+        padding: 2rem;
     }
 
-    table td{
-        color: var(--neutral-white-60);
-        text-transform: uppercase;
+    .card-list{
+        display: block;
+        text-align: left;
     }
-    
-    @media screen and (min-width: 821px) {
-        .card{
-            max-width: 60%;
-            flex-direction: row;
-        }
-    
-        .info-section,
-        .picture-section{
-            width: 50%;
-        }
-        
-        .info-section{
-            text-align: left;
-            padding: 3rem;
-        }
-    
-        div{
-            display: flex;
-        }
+
+    div{
+        float: left;
+        width: 33.33%;
     }
+}
+
+@media screen and (width: 900px) {
+
+}
