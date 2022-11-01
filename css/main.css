@@ -144,10 +144,9 @@ td{
     text-transform: uppercase;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 821px) {
     main{
         max-width: 60%;
-        max-height: 60%;
         flex-direction: row;
     }
 
@@ -160,8 +159,13 @@ td{
         padding: 3rem;
     }
 
+    div{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
     table{
-        float: left;
-        max-width: 33.33%;
+        display: inline-block;
     }
 }
