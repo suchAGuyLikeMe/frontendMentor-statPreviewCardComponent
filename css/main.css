@@ -124,6 +124,7 @@ table{
 
 td{
     color: var(--neutral-white-60);
+    font-size: smaller;
     text-transform: uppercase;
 }
 
