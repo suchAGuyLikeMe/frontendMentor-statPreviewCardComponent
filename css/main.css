@@ -172,9 +172,9 @@ img {
 }
 
 /*===============
-821px
+1000px
 ===============*/
-@media screen and (min-width: 51.3125rem) {
+@media screen and (min-width: 62.5rem) {
     .card {
         text-align: start;
         flex-direction: row-reverse;
