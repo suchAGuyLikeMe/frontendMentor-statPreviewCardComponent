@@ -1,46 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Mentor | Stats Preview Card Component</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Frontend Mentor | Stats Preview Card Component</title>
 
-    <link rel="stylesheet" type="image/png" href="img/favicon-32x32.png">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Deca">
-</head>
-<body>
-    <main>
-        <article class="card">
-            <section class="info-section">
-                <h1 class="card-heading">Get <span class="heading-span">insights</span> that help your business grow.</h1>
-    
-                <p class="card-paragraph">
-                    Discover the benefits of data analytics and make better decisions regarding revenue, 
-                    customer experience, and overall efficiency.
-                </p>
+        <!--tab icon-->
+        <link rel="stylesheet" type="image/png" href="img/favicon-32x32.png" />
 
-                <div>
-                    <p class="stat-item">10k+</p>
-                    <p class="stat-heading-item">companies</p>
-                </div>
-                <div>
-                    <p class="stat-item">314</p>
-                    <p class="stat-heading-item">templates</p>
-                </div>
-                <div>
-                    <p class="stat-item">12M+</p>
-                    <p class="stat-heading-item">queries</p>
-                </div>
-            </section>
-    
-            <picture class="picture-section">
-                <source media="(min-width: 800px)" srcset="img/image-header-desktop.jpg">
-                <img src="img/image-header-mobile.jpg" alt="picture of business team" aria-hidden="true">
-            </picture>    
-        </article>
-    </main>
-</body>
+        <!--css-->
+        <link rel="stylesheet" href="css/main.css" />
+
+        <!--fonts-->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Inter" />
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Lexend+Deca" />
+    </head>
+    <body>
+        <main>
+            <article class="card">
+                <picture class="picture-section">
+                    <!--800px-->
+                    <source
+                        media="(min-width: 37.5rem)"
+                        srcset="img/image-header-desktop.jpg" />
+                    <img
+                        src="img/image-header-mobile.jpg"
+                        alt=""
+                        aria-hidden="true" />
+                </picture>
+                <section class="info-section">
+                    <h1 class="card-heading">
+                        Get <span class="heading-span">insights</span> that help
+                        your business grow.
+                    </h1>
+
+                    <p class="card-paragraph">
+                        Discover the benefits of data analytics and make better
+                        decisions regarding revenue, customer experience, and
+                        overall efficiency.
+                    </p>
+
+                    <div class="stats">
+                        <div>
+                            <p class="stat-item">10k+</p>
+                            <p class="stat-heading-item">COMPANIES</p>
+                        </div>
+                        <div>
+                            <p class="stat-item">314</p>
+                            <p class="stat-heading-item">TEMPLATES</p>
+                        </div>
+                        <div>
+                            <p class="stat-item">12M+</p>
+                            <p class="stat-heading-item">QUERIES</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+    </body>
 </html>
