@@ -154,8 +154,14 @@ img {
     margin-bottom: 1.5rem;
 }
 
-/*768px*/
-@media screen and (min-width: 48rem) {
+/*===============
+540px
+===============*/
+@media screen and (min-width: 33.75rem) {
+    .card {
+        width: 60%;
+    }
+
     .stats {
         flex-direction: row;
     }
@@ -165,11 +171,14 @@ img {
     }
 }
 
-/*821px*/
+/*===============
+821px
+===============*/
 @media screen and (min-width: 51.3125rem) {
     .card {
         text-align: start;
         flex-direction: row-reverse;
+        max-width: 80%;
     }
 
     .picture-section,
